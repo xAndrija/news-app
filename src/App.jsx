@@ -7,9 +7,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
 function App() {
 
-  const apiKey = import.meta.env.VITE_API_KEY;
-  console.log(apiKey);
-
   return (
     <BrowserRouter>
       <Routes>

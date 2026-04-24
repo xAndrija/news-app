@@ -1,16 +1,13 @@
 
 import axios from "axios";
 
-const API_URL = "https://newsapi.org/v2/top-headlines";
+const API_URL = "/api/news";
 
 export const getNews = async () => {
-    const apiKey = import.meta.env.VITE_API_KEY;
-
     try {
         const response = await axios.get(API_URL, {
             params: {
-                country: "us",
-                apiKey: apiKey
+                country: "us"
             }
         });
 

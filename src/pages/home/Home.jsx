@@ -4,7 +4,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { useEffect, useState } from "react";
 import NewsList from "../../components/NewsList";
-import { getNews } from "../../api/newsApi";
+import { getNews } from "../../../api/newsApi";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContextValue";
 import { useCallback } from "react";
