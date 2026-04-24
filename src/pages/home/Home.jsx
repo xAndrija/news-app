@@ -74,7 +74,7 @@ function Home() {
         <div className="main">
             <Header />
             <div className="home-screen">
-                <h1>Headlines</h1>
+                <h1 className="text-red-500">Headlines</h1>
 
                 {user && (
                     <div className="search-wrapper">
