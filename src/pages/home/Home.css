@@ -1,0 +1,99 @@
+.main {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    min-height: 100vh;
+
+}
+
+.home-screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: rgb(221, 235, 255);
+}
+
+.home-screen h1 {
+    font-size: 52px;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-family: Georgia, 'Times New Roman', serif;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.home-screen h1::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #1a1a1a;
+    margin: 16px 0 28px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    width: 400px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.search-input {
+    background: #fff;
+    border: 0.5px solid #ddd;
+    border-right: none;
+    border-radius: 28px 0 0 28px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #1a1a1a;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
