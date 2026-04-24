@@ -28,6 +28,7 @@ function Home() {
                 console.log('dal ulazim ovde')
                 setLoading(true)
                 const articles = await getNews();
+                localStorage.setItem("news", JSON.stringify(articles))
                 setNewsArray(articles);
                 setFilteredNews(articles);
             } catch (err) {
