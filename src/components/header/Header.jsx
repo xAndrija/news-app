@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from "../assets/global-news3.png";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/useAuth";
 import { logoutUser } from "../../firebase/auth";
@@ -18,7 +19,7 @@ function Header() {
         <div className="header-container">
             <div className="header-components">
 
-                <img onClick={() => navigate("/")} src="./src/assets/global-news3.png" alt="" />
+                <img onClick={() => navigate("/")} src={logo} alt="logo" />
 
                 <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
 
